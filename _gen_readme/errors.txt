@@ -1,0 +1,14 @@
+(
+set -x
+./opusgainfield opus_file.ogg -s 0
+./opusgainfield vorbis_file.ogg
+./opusgainfield wav_file.wav
+./opusgainfield opus_file.ogg -s 128
+./opusgainfield opus_file.ogg -a 140
+./opusgainfield opus_file.ogg -s 123not_a_number
+./opusgainfield opus_file.ogg -s
+./opusgainfield opus_file.ogg -s 10 -a 20
+./opusgainfield opus_file.ogg another_file
+./opusgainfield not_existing
+./opusgainfield -s 3
+)

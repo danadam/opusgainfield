@@ -1,0 +1,15 @@
+(
+set -x
+./opusgainfield opus_file.ogg -s 0
+./opusgainfield -h
+./opusgainfield opus_file.ogg
+./opusgainfield opus_file.ogg -s 5.1
+./opusgainfield opus_file.ogg
+opusinfo opus_file.ogg | grep "gain"
+./opusgainfield opus_file.ogg -a 10
+./opusgainfield opus_file.ogg
+./opusgainfield opus_file.ogg -a -20.2
+./opusgainfield opus_file.ogg
+./opusgainfield opus_file.ogg -s -3
+./opusgainfield opus_file.ogg
+)
