@@ -1,4 +1,18 @@
-# Examples
+**Table fo Contents**
+
+<div id="user-content-toc">
+
+* [Intro](#intro)
+* [Usage](#usage)
+* [Examples](#examples)
+
+</div>
+
+# Intro
+
+Read and modify "gain" header field in Ogg Opus files.
+
+# Usage
 
     ]$ ./opusgainfield -h
     Usage:
@@ -16,6 +30,8 @@
     Without optional arguments it prints current gain of the INPUT_FILE.
 
     The allowed values for gain stored in the file are floating point in range [-128, 127).
+
+# Examples
 
     ]$ ./opusgainfield opus_file.ogg
     gain: 0 dB
